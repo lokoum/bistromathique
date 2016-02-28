@@ -10,5 +10,6 @@ The goal of the project is to write a program able to display the result of the 
 #Example:
 
 $ echo "4+6" | ./calc 0123456789 "()+-*/%" 3 ; echo
+
 10
 
