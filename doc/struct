@@ -1,0 +1,57 @@
+struct for doc in /home/theis_p/bistromator
+   Made by Paul THEIS
+   Login   <theis_p@epitech.net>   
+  
+Structure:	s_nbr
+Use:		t_nbr
+Info: t_nbr est la structure qui permet de definir une operande ainsi cette operande possede des caracteristiques defini dans cette structure.
+
+char                  *nbr;		=> nbr est la variable qui va contenir la chaine de caractere de l'operande, une chaine renverser et non ascii
+int                   len;		=> len est la taille de la chaine de caractere de l'operande
+char                  is_neg;		=> isneg defini si l'operande est positive ou negative, si isneg == 1 alors le nombre est negatif, par defaut isneg est initialisé a 0
+
+
+Structure:	s_var
+User:		t_var
+Info: t_var est une structure qui possede de nombreuse variable qui sont utile en tant que compteur ou variable temporaire entre fonction.
+
+int                   a;
+int                   b;
+int                   c;
+int                   d;
+int                   e;
+char                  can_free;		=> can_free est une variable qui permet de savoir si la structure peut etre free, si can_free == 1 alors la structure sera free
+
+
+Structure:	s_info
+User:		t_info
+Info: t_info est une structure qui detient toutes les caracteristiques de notre expression arithmetique
+
+char                  *expr;		=> expr est la variable qui va contenir l'expression arithmetique
+char                  *base;		=> base contient la base sur la quelle est fondé l'expression arithmetique (ex: "01" pour une base binaire)
+char                  *struc;		=> struc est la variable qui va contenir la structure des operateurs dans l'ordre "()+-*/%"
+int                   baselen;		=> baselen est la taille de la base
+int                   size;		=> size est la taille de l'expression arithmetique
+t_var                 *var;		=> var est une structure qui va contenir nos nombruses variables temporaire comme les compteurs (cnf: t_var)
+
+
+Structure:	s_node
+User:		t_node
+Info: t_node est une entité de notre liste, comparable a un maillon d'une chaine.
+
+char                  *str;		=> str est la variable qui contient une entité parsé de notre expression arithmetique, donc soit une operande, soit un operateur
+int                   i;		
+struct s_node         *next;		=> next contient l'adresse de la node suivante de la chaine
+struct s_node         *prev;		=> prev contient l'adresse de la node precedente de la chaine
+
+
+Structure:	s_stack
+User:		t_stack
+Info: 
+
+int                   i;
+int                   start;
+int                   end;
+int                   side;;
+struct s_stack        *next;
+struct s_stack        *prev;

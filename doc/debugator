@@ -1,0 +1,38 @@
+debugator for doc in /home/theis_p/bistromator
+   
+   Made by Paul THEIS
+   Login   <theis_p@epitech.net>
+  
+Description:
+	Permet d'afficher les valeurs contenues dans les structures et de
+	pouvoir debuger le programme en connaissant le contenu des structures.
+
+External Function:
+	 int	debug_info(t_info *info) 
+	 int	debug_nbr(t_nbr *nbr)
+
+Internal Function:
+	 int	debug_putstr(char *name, char *str)
+	 int	debug_put_nbr(char *name, int nbr)
+
+Return:
+	A pour valeur de retour uniquement O.
+
+Example:
+
+<= debug_info(info);
+=> 
+#==========DEBUGATOR-INFO==========#
+base: 0123456789
+structure: ()+-*/%
+baselen: 10
+var_a: 2
+#==================================#
+
+<= debug_nbr(nbr);
+=>
+#==========DEBUGATOR-NBR===========#
+nbr: 10
+len: 2
+is_neg: 1
+#==================================#

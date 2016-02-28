@@ -1,0 +1,20 @@
+errator for doc in /home/theis_p/bistromator
+   
+   Made by Paul THEIS
+   Login   <theis_p@epitech.net>
+ 
+Description:
+        Permet d'afficher des erreurs, est utilisé pour la sortie d'erreur
+
+External Function:
+         int    perrator(char *msg1, char *msg2)
+
+Internal Function:
+         int    errator(char *str)
+         int    errachar(char c)
+
+Return:
+        A pour valeur de retour uniquement O.
+
+Example:
+
